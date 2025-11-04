@@ -14,17 +14,25 @@ let songs = [];
 let currentIndex = -1;
 let isPlaying = false;
 
-// To add a new song:
-// 1. Open songs.json.
-// 2. Append a new object with "title", "artist", "cover", and "url" fields.
-//    - "cover" should point to an image stored locally (e.g., assets/covers/my-cover.png).
-//    - "url" can be a local MP3 path or a direct Google Drive download link (uc?export=download&id=...).
-// 3. Save the file. The player will automatically load it next time the page is refreshed.
+// To add a new song for the desktop app:
+// 1. Copy the audio file into assets/audio/ (this folder is ignored by git so you can keep
+//    personal tracks locally).
+// 2. Copy or create an image in assets/covers/ to use as the artwork.
+// 3. Open songs.json and append a new object with "title", "artist", "cover", and "url".
+//    - "cover" should reference the relative image path (e.g., assets/covers/my-cover.png).
+//    - "url" should reference the relative audio path (e.g., assets/audio/my-song.mp3).
+// 4. Save the file and relaunch the Electron app (or refresh the browser if running on the web).
+// The preload script will load songs.json when the desktop app starts, while browsers fallback to
+// fetching the JSON file directly when hosted with the rest of the assets.
 
 async function loadSongs() {
   try {
-    const response = await fetch('songs.json');
-    songs = await response.json();
+    if (window.electronAPI && typeof window.electronAPI.loadSongs === 'function') {
+      songs = await window.electronAPI.loadSongs();
+    } else {
+      const response = await fetch('songs.json', { cache: 'no-store' });
+      songs = await response.json();
+    }
     renderSongList();
   } catch (error) {
     songListEl.innerHTML = '<p class="song-list__error">Unable to load songs. Please check songs.json.</p>';
