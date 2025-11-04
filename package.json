@@ -1,0 +1,14 @@
+{
+  "name": "cakma-spotify",
+  "version": "1.0.0",
+  "description": "Offline-friendly desktop music player built with web technologies.",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}
