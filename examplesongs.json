@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Solar Drift",
+    "artist": "Nova Collective",
+    "cover": "assets/covers/placeholder.png",
+    "url": "https://drive.google.com/uc?export=download&id=YOUR_TRACK_ID"
+  },
+  {
+    "title": "Midnight Echoes",
+    "artist": "City Waves",
+    "cover": "assets/covers/placeholder.png",
+    "url": "https://drive.google.com/uc?export=download&id=YOUR_TRACK_ID_2"
+  },
+  {
+    "title": "Soft Horizons",
+    "artist": "Ambient Fields",
+    "cover": "assets/covers/placeholder.png",
+    "url": "assets/audio/sample.mp3"
+  }
+]
