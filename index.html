@@ -1,47 +1,47 @@
-+<!DOCTYPE html>
-+<html lang="en">
-+  <head>
-+    <meta charset="UTF-8" />
-+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+    <title>Cakma Spotify</title>
-+    <link rel="stylesheet" href="style.css" />
-+  </head>
-+  <body>
-+    <div class="app">
-+      <header class="app__header">
-+        <h1>Cakma Spotify</h1>
-+        <p>Offline-friendly music player</p>
-+      </header>
-+
-+      <main class="app__main">
-+        <aside class="song-list" id="song-list" aria-label="Song list"></aside>
-+
-+        <section class="player" aria-label="Music player">
-+          <div class="now-playing" id="now-playing">
-+            <img src="assets/covers/placeholder.png" alt="Album cover" class="now-playing__cover" id="now-playing-cover" />
-+            <div>
-+              <p class="now-playing__title" id="now-playing-title">Select a song</p>
-+              <p class="now-playing__artist" id="now-playing-artist">Artist will appear here</p>
-+            </div>
-+          </div>
-+
-+          <div class="controls">
-+            <button class="controls__btn" id="prev-btn" aria-label="Previous song">⏮</button>
-+            <button class="controls__btn controls__btn--play" id="play-btn" aria-label="Play or pause">▶️</button>
-+            <button class="controls__btn" id="next-btn" aria-label="Next song">⏭</button>
-+          </div>
-+
-+          <div class="progress">
-+            <span class="progress__time" id="current-time">0:00</span>
-+            <input type="range" id="progress-bar" class="progress__bar" min="0" max="100" value="0" aria-label="Seek" />
-+            <span class="progress__time" id="duration">0:00</span>
-+          </div>
-+
-+          <audio id="audio" preload="metadata"></audio>
-+        </section>
-+      </main>
-+    </div>
-+
-+    <script src="script.js" defer></script>
-+  </body>
-+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakma Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <h1>Cakma Spotify</h1>
+        <p>Offline-friendly music player</p>
+      </header>
+
+      <main class="app__main">
+        <aside class="song-list" id="song-list" aria-label="Song list"></aside>
+
+        <section class="player" aria-label="Music player">
+          <div class="now-playing" id="now-playing">
+            <img src="assets/covers/placeholder.png" alt="Album cover" class="now-playing__cover" id="now-playing-cover" />
+            <div>
+              <p class="now-playing__title" id="now-playing-title">Select a song</p>
+              <p class="now-playing__artist" id="now-playing-artist">Artist will appear here</p>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button class="controls__btn" id="prev-btn" aria-label="Previous song">⏮</button>
+            <button class="controls__btn controls__btn--play" id="play-btn" aria-label="Play or pause">▶️</button>
+            <button class="controls__btn" id="next-btn" aria-label="Next song">⏭</button>
+          </div>
+
+          <div class="progress">
+            <span class="progress__time" id="current-time">0:00</span>
+            <input type="range" id="progress-bar" class="progress__bar" min="0" max="100" value="0" aria-label="Seek" />
+            <span class="progress__time" id="duration">0:00</span>
+          </div>
+
+          <audio id="audio" preload="metadata"></audio>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
