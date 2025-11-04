@@ -192,4 +192,4 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-loadSongs();
+loadSongs()

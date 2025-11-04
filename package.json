@@ -1,8 +1,8 @@
 {
-  "name": "cakma-spotify",
+  "name": "cakma-spotify-ehe",
   "version": "1.0.0",
   "description": "Offline-friendly desktop music player built with web technologies.",
-  "main": "electron-main.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
