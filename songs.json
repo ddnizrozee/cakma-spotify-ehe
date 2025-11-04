@@ -1,20 +1,20 @@
 [
   {
-    "title": "Solar Drift",
-    "artist": "Nova Collective",
+    "title": "Example Track 01",
+    "artist": "Replace Me",
     "cover": "assets/covers/placeholder.png",
-    "url": "https://drive.google.com/uc?export=download&id=YOUR_TRACK_ID"
+    "url": "assets/audio/example-track-01.mp3"
   },
   {
-    "title": "Midnight Echoes",
-    "artist": "City Waves",
+    "title": "Example Track 02",
+    "artist": "Replace Me",
     "cover": "assets/covers/placeholder.png",
-    "url": "https://drive.google.com/uc?export=download&id=YOUR_TRACK_ID_2"
+    "url": "assets/audio/example-track-02.mp3"
   },
   {
-    "title": "Soft Horizons",
-    "artist": "Ambient Fields",
+    "title": "Example Track 03",
+    "artist": "Replace Me",
     "cover": "assets/covers/placeholder.png",
-    "url": "assets/audio/sample.mp3"
+    "url": "assets/audio/example-track-03.mp3"
   }
 ]
